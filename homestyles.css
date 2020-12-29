@@ -1,0 +1,111 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url("Background.jpg");
+    text-align: center;
+    color: #C0C0C0;
+    margin-left: 160px;
+}
+
+.menu {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.menu a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.menu a:hover {
+    color: #f1f1f1;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    height: 500px;
+    width: 90%;
+    background-color: #333333;
+    padding: 10px;
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.project {
+    display: flex;
+    flex: 0.7;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 15px;
+}
+
+#othelloLink {
+    font-size: 30px;
+    color: #999999
+}
+
+#pieces, #move, #moveVal, button, #available {
+    font-size: 30px;
+}
+
+.main {
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+#description {
+    font-size: 20px;
+}
+
+#board {
+    font-size: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .menu {padding-top: 15px;}
+    .menu a {font-size: 18px;}
+}
+
+h1 {
+    font-size: 50px;
+    text-decoration: bold;
+}
+
+h2 {
+    font-size: 40px;
+    text-decoration: bold;
+}
+
+h3 {
+    font-size: 30px;
+    text-decoration: bold;
+}
+
+.projectText {
+    font-size: 30px;
+}

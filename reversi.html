@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        window.languagePluginUrl = 'https://cdn.jsdelivr.net/pyodide/v0.16.1/full/';
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Othello &#8212 Aman Heyer</title>
+    <link href="homestyles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+  </div>
+
+  <h2>Play Othello!</h2>
+  <h3>Try your luck in Othello against a Monte Carlo Tree Search computer agent.<br>This project was made for CPSC 474: Computational Intelligence for Games at Yale.</h3>
+  <a id="othelloLink" href="https://www.ultraboardgames.com/othello/game-rules.php">Need a refresher on Othello?</a>
+
+  <pre id="board">
+
+  </pre>
+
+  <p id="pieces">
+
+  </p>
+
+  <p id="move">
+
+  </p>
+
+  <p id="available">
+
+  </p>
+
+  <script type="module">import * as reversi from './reversi/__target__/game.js'; window.reversi = reversi;</script>
+
+  <div class="row">  
+    <input type="text" id="moveVal" placeholder="Choose Move Number: "> 
+    <button type="button" onclick="reversi.handleMove()">Play Move</button>
+  </div>
+
+</body>
+
+</html>
