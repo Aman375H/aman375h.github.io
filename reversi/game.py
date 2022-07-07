@@ -573,7 +573,7 @@ def human_game(ai_strat):
     print("Computer's Pieces: ", pieces[1], "Your pieces: ", pieces[2])
     if position.winner() == 0:
         print('Draw!')
-    elif (position.winner() > 0 and i % 2 == 0) or (position.winner() < 0 and i % 2 == 1):
+    elif (position.winner() > 0):
         print('Aww, you lost :(')
     else:
         print('You won!')
